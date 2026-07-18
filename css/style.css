@@ -5,38 +5,57 @@
 }
 
 header{
-    padding:24px;
+    padding:8px;
 }
 main{
     display: flex;
 }
 
-
 .sideBar{
     width: 250px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: aquamarine;
 }
 .profile{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    height: 80px;
     gap: 16px;
     background-color: bisque;
 }
 .profile img{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
     border-radius: 50px;
+    margin: 10px;
 }
 .profileName{
     display: flex;
     align-items: flex-start;
     font-size: 32px;
 }
+
+.sideBarElements{
+    display: flex;
+    flex-direction: column;
+    margin: 8px ;
+}
+.sideBarElements a{
+    margin: 8px;
+    background-color: antiquewhite;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    text-decoration:dashed;
+    color: black;
+    
+}
+
 
 
 
@@ -54,7 +73,7 @@ main{
 }
 .searchBar{
     display: flex;
-    padding: 16px;
+    height: 80px;
     justify-content: center;
     background-color: cadetblue;
     gap:24px;
@@ -77,9 +96,12 @@ main{
     
 }
 .addButton{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    gap: 8PX;
+    justify-content: center;
+    text-align: center;
 }
 
 
