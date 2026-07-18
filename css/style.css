@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding:24px;
+}
+main{
+    display: flex;
+}
+
+
+.sideBar{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    background-color: bisque;
+}
+.profile img{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.profileName{
+    display: flex;
+    align-items: flex-start;
+    font-size: 32px;
+}
+
+
+
+
+
+
+
+
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: cornflowerblue;
+}
+.searchBar{
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    background-color: cadetblue;
+    gap:24px;
+    align-items: center;
+}
+.searchInput{
+    padding: 16px;
+    border-radius: 16px;
+}
+.searchButton{
+    padding: 16px;
+    border-radius: 16px;
+}
+
+
+
+.addNoteButton{
+    display: flex;
+    margin: 0 24px;
+    
+}
+.addButton{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+
+
+
+
+.noteContainer{
+    display: grid;
+    gap: 16px;
+    margin: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.noteCard{
+    display: flex;
+    flex-direction: column;
+    padding: 34px;
+    gap: 16px;
+    height: 250px;
+    text-transform: capitalize;
+    background-color:aliceblue;
+    border-radius: 24px;
+}
+
+.noteTitle{
+    font-size: 34px;
+}
+.notePreview{
+    font-size: 16px;
+}
+.noteFooter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.noteTag{
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.favorite{
+    margin-top: auto;
+    margin-left: auto;
+}
