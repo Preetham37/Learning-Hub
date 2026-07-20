@@ -4,12 +4,27 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary: #2563EB;
+    --secondly:black;
+    --background: #F8FAFC;
+    --surface: #FFFFFF;
+    --text: #1E293B;
+    --border: #E2E8F0;
+    --radius: 16px;
+    --spacing: 16px;
+}
+header{
+    background-color: var(--background);
+}
+
 main{
     display: flex;
+    background-color: var(--background);
 }
 h2{
     padding: 8px;
-}s
+}
 aside{
     width: 250px;
     height: 100vh;
@@ -18,6 +33,7 @@ aside{
     padding: 8px;
     display: flex;
     gap: 16px;
+
 }
 .profileImage{
     flex-shrink: 0;
@@ -45,6 +61,7 @@ aside{
     color: black;
     display: flex;
     justify-content: center;
+    background-color: var(--surface);
 }
 
 .pageLinkCards{
@@ -70,12 +87,16 @@ aside{
 .searchBar{
     padding: 16px;
     border-radius: 16px;
+    flex:1;
+    background-color: var(--surface);
 }
 
 .searchButton{
     border-radius: 16px;
     font-size: larger;
     padding: 16px;
+    color: var(--background);
+    background-color: var(--secondly);
     overflow: hidden;
 }
 
@@ -87,6 +108,7 @@ aside{
     margin: 16px 0;
     padding: 16px;
     gap: 4px;
+    background-color: var(--primary);
     border-radius: 16px;
 }
 
@@ -97,20 +119,22 @@ aside{
     gap: 16px;
     grid-template-columns: 1fr 1fr 1fr;
 }
-h2{
-    padding: 8px;
-}
+
 .continueLearningCard{
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
+    background-color: var(--surface);
+    border-radius: 16px;
+    padding: 8px;
 }
 
 .namePrivew p{
     overflow: hidden;
+    padding: 8px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    word-break: break-all;          
+    word-break: break-word;          
     -webkit-line-clamp: 4;  
 }
 
@@ -128,7 +152,6 @@ h2{
     gap: 16px;
 }
 .categoriesCards button{
-    background-color: none;
     border: 0;
     padding: 8px;
     border-radius: 8px;
