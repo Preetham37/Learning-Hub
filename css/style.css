@@ -20,18 +20,20 @@
     --radius: 16px;
     --spacing: 16px;
 }
+body{
+    background-color: var(--background);
+}
 header{
     padding: 8px 16px;
-    background-color: var(--background);
 }
 
 main{
     display: flex;
-    background-color: var(--background);
+
 }
 h2{
     padding: 8px 24px;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 aside{
@@ -89,7 +91,7 @@ aside{
 }
 .search{
     display: flex;
-    padding: 16px;
+    padding:  0     16px;
     gap: 16px;
     justify-content: center;
     align-items: stretch;
