@@ -2,145 +2,91 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
-header{
-    padding:8px;
-}
 main{
     display: flex;
 }
 
-.sideBar{
+aside{
     width: 250px;
-    display: flex;
-    flex-direction: column;
-    background-color: aquamarine;
+    height: 100vh;
 }
 .profile{
+    padding: 8px;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 80px;
     gap: 16px;
-    background-color: bisque;
 }
-.profile img{
-    width: 60px;
-    height: 60px;
+.profileImage{
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
     overflow: hidden;
-    border-radius: 50px;
-    margin: 10px;
 }
 .profileName{
     display: flex;
-    align-items: flex-start;
-    font-size: 32px;
+    justify-content: center;
+    align-items:center;
 }
 
-.sideBarElements{
+.pageLinks{
     display: flex;
     flex-direction: column;
-    margin: 8px ;
-}
-.sideBarElements a{
-    margin: 8px;
-    background-color: antiquewhite;
+    gap: 16px;
     padding: 16px;
+}
+
+.pageLinkCards{
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.mainContent{
     display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px;
+    gap: 24px;
+}
+.search{
+    display: flex;
+    padding: 16px;
+    gap: 16px;
     justify-content: center;
     align-items: center;
-    border-radius: 16px;
-    text-decoration:dashed;
-    color: black;
-    
-}
-
-
-
-
-
-
-
-
-
-.content{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    background-color: cornflowerblue;
 }
 .searchBar{
-    display: flex;
-    height: 80px;
-    justify-content: center;
-    background-color: cadetblue;
-    gap:24px;
-    align-items: center;
-}
-.searchInput{
     padding: 16px;
     border-radius: 16px;
+
 }
 .searchButton{
-    padding: 16px;
     border-radius: 16px;
-}
-
-
-
-.addNoteButton{
-    display: flex;
-    margin: 0 24px;
-    
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
 }
 .addButton{
-    padding: 16px;
-    border-radius: 16px;
     display: flex;
-    gap: 8PX;
-    justify-content: center;
-    text-align: center;
 }
-
-
-
-
-.noteContainer{
-    display: grid;
-    gap: 16px;
+.addButtons{
     margin: 16px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.noteCard{
-    display: flex;
-    flex-direction: column;
-    padding: 34px;
-    gap: 16px;
-    height: 250px;
-    text-transform: capitalize;
-    background-color:aliceblue;
-    border-radius: 24px;
 }
 
-.noteTitle{
-    font-size: 34px;
-}
-.notePreview{
-    font-size: 16px;
-}
-.noteFooter{
+
+.continueLearningcards{
     display: flex;
-    justify-content: space-between;
-    margin-top: auto;
+    padding: 16px;
+    gap: 16px;
 }
-.noteTag{
-    background-color: aquamarine;
-    border-radius: 10px;
-    padding: 5px 10px;
+
+.categoriesCards{
+    display: flex;
+    padding: 16px;
+
+    gap: 16px;
 }
-.favorite{
-    margin-top: auto;
-    margin-left: auto;
-}
+
