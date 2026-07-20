@@ -2,12 +2,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /*
+    border: 1px solid black;
+
+    */
+    
 }
 
 :root{
     --primary: #2563EB;
     --secondly:black;
-    --background: #F8FAFC;
+    --background: #EEF2F7;
     --surface: #FFFFFF;
     --text: #1E293B;
     --border: #E2E8F0;
@@ -23,31 +28,35 @@ main{
     background-color: var(--background);
 }
 h2{
-    padding: 8px;
+    padding: 8px 24px;
+    font-size: 36px;
 }
+
 aside{
     width: 250px;
     height: 100vh;
 }
 .profile{
-    padding: 8px;
+    padding: 8px 8px 0 24px;
     display: flex;
     gap: 16px;
+    align-items:center;
 
 }
 .profileImage{
     flex-shrink: 0;
     flex-grow: 0;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     overflow: hidden;
 }
 .profileName{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items:center;
     flex: auto;
+    font-size: 32px;
 }
 
 .pageLinks{
@@ -60,14 +69,14 @@ aside{
     text-decoration: none;
     color: black;
     display: flex;
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 16px;
     justify-content: center;
     background-color: var(--surface);
 }
 
-.pageLinkCards{
-    padding: 16px;
-    border-radius: 16px;
-}
+
 
 .mainContent{
     display: flex;
@@ -85,10 +94,10 @@ aside{
     
 }
 .searchBar{
-    padding: 16px;
+    padding: 16px 80px;
     border-radius: 16px;
-    flex:1;
     background-color: var(--surface);
+    border: 3px solid var(--border) ;
 }
 
 .searchButton{
@@ -98,6 +107,7 @@ aside{
     color: var(--background);
     background-color: var(--secondly);
     overflow: hidden;
+    border: 3px solid var(--border);
 }
 
 
@@ -105,11 +115,15 @@ aside{
 .addButtons{
     display: flex;
     align-items: center;
-    margin: 16px 0;
+    margin-left: 16px;
     padding: 16px;
+    font-size: large;
     gap: 4px;
+    color:var(--background);
+    font-weight: 900;
     background-color: var(--primary);
     border-radius: 16px;
+    border: 3px solid var(--border);
 }
 
 
@@ -127,6 +141,7 @@ aside{
     background-color: var(--surface);
     border-radius: 16px;
     padding: 8px;
+    color: var(--text);
 }
 
 .namePrivew p{
@@ -150,9 +165,13 @@ aside{
     display: flex;
     padding: 16px;
     gap: 16px;
+    font-size: 24px;
 }
 .categoriesCards button{
     border: 0;
     padding: 8px;
-    border-radius: 8px;
+    background-color: var(--surface);
+    border-radius: 16px;
+    color: var(--text);
+    font-size: 20px;
 }
