@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 main{
     display: flex;
 }
-
+h2{
+    padding: 8px;
+}s
 aside{
     width: 250px;
     height: 100vh;
@@ -30,6 +31,7 @@ aside{
     display: flex;
     justify-content: center;
     align-items:center;
+    flex: auto;
 }
 
 .pageLinks{
@@ -37,6 +39,12 @@ aside{
     flex-direction: column;
     gap: 16px;
     padding: 16px;
+}
+.pageLinks a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
 }
 
 .pageLinkCards{
@@ -56,37 +64,72 @@ aside{
     padding: 16px;
     gap: 16px;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    
 }
 .searchBar{
     padding: 16px;
     border-radius: 16px;
-
 }
+
 .searchButton{
     border-radius: 16px;
-    height: 50px;
-    width: 50px;
+    font-size: larger;
+    padding: 16px;
     overflow: hidden;
 }
-.addButton{
-    display: flex;
-}
+
+
+
 .addButtons{
-    margin: 16px;
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    padding: 16px;
+    gap: 4px;
+    border-radius: 16px;
 }
 
 
-.continueLearningcards{
-    display: flex;
+.continueLearningCardArea{
+    display: grid;
     padding: 16px;
     gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h2{
+    padding: 8px;
+}
+.continueLearningCard{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.namePrivew p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-break: break-all;          
+    -webkit-line-clamp: 4;  
+}
+
+.noteFooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin-top: auto;
+
 }
 
 .categoriesCards{
     display: flex;
     padding: 16px;
-
     gap: 16px;
 }
-
+.categoriesCards button{
+    background-color: none;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+}
