@@ -110,7 +110,7 @@ aside{
     font-size: larger;
     padding: 16px;
     color: var(--background);
-    background-color: var(--secondly);
+    background-color: var(--text);
     overflow: hidden;
     border: 3px solid var(--border);
 }
@@ -145,17 +145,25 @@ aside{
     flex-direction: column;
     background-color: var(--surface);
     border-radius: 16px;
-    padding: 8px;
+    padding:16px;
     color: var(--text);
+}
+.namePrivew h3{
+    /*
+Source - https://stackoverflow.com/a/27700301
+Posted by Nixon, modified by community. See post 'Timeline' for change history
+Retrieved 2026-07-21, License - CC BY-SA 3.0
+*/
+
+white-space: pre-line;
+
+
 }
 
 .namePrivew p{
     overflow: hidden;
     padding: 8px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    word-break: break-word;          
-    -webkit-line-clamp: 4;  
+    display:block; 
 }
 
 .noteFooter{
@@ -178,4 +186,36 @@ aside{
     border-radius: 16px;
     color: var(--text);
     font-size: 16px;
+}
+
+@media(max-width:768px) {
+    header{
+        width: 100vh;
+        padding-left: 20px;
+    }
+    
+    main{
+        flex-direction: column;
+        height:150px;
+        width: 100vh;
+        
+    }
+    aside{
+        width: 100vh;
+    }
+
+    .searchBar{
+        width: 50vh;
+    }
+    .pageLinks{
+        flex-direction: row;
+        overflow: scroll;
+    }
+    .continueLearning{
+        width: 100vh;
+    }
+    .continueLearningCardArea{
+
+        grid-template-columns: 1fr 1fr;
+    }
 }
