@@ -99,7 +99,7 @@ aside{
 }
 .searchBar{
     padding: 16px;
-    width: 70vh;
+    width: 50vh;
     border-radius: 16px;
     background-color: var(--surface);
     border: 3px solid var(--border) ;
